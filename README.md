@@ -20,10 +20,20 @@ This repository contains a set of introductory Python exercises completed as par
 - Created a script with an unused variable
 - Observed linting warnings in the VS Code Problems tab
 
-### 4. Formatter and Execution Workflow (UML)
+### 4. Formatting on Save with autopep8
+- Configured VS Code to automatically format Python files on save
+- Installed and used `autopep8` as the Python code formatter
+- Verified formatting is applied consistently when files are saved
+
+### 5. Virtual Environment Detection Script
+- Created a script to detect whether Python is running inside a virtual environment
+- Compared `sys.prefix` and `sys.base_prefix` to determine the execution context
+- Printed different messages depending on whether a virtual environment is active
+
+### 6. Formatter and Execution Workflow (UML)
 - Created a UML sequence diagram illustrating:
   - Writing code in VS Code
-  - Automatic formatting with Black on save
+  - Automatic formatting with autopep8 on save
   - Running the script in the integrated terminal
 
 ## Tools and Technologies
@@ -31,12 +41,12 @@ This repository contains a set of introductory Python exercises completed as par
 - Virtual Environments (`venv`)
 - VS Code
 - Pylint
-- Black
+- autopep8
 - Git & GitHub
 
 ## Notes
 - The virtual environment (`.venv`) is excluded from version control using `.gitignore`
-- VS Code project-specific settings are included for consistent linting and formatting
+- VS Code project-specific settings are included to ensure consistent linting and formatting behaviour
 
 ---
 
