@@ -1,7 +1,37 @@
 {
+  // ----------------------------
+  // ✅ ACTIVE: Modern VS Code setup
+  // ----------------------------
   "[python]": {
     "editor.defaultFormatter": "ms-python.autopep8",
     "editor.formatOnSave": true
   },
-  "pylint.enabled": true
+
+  "pylint.enabled": true,
+
+  "notebook.defaultFormatter": "ms-python.autopep8",
+
+  // Allow chat/AI tools to edit VS Code config files
+  "chat.tools.edits.autoApprove": {
+    "**/.vscode/*.json": true
+  },
+
+  // --------------------------------------------------
+  // 📝 TUTOR CONFIG (COMMENTED OUT – legacy settings)
+  // Included for reference and course alignment
+  // --------------------------------------------------
+
+  /*
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+
+  "python.analysis.typeCheckingMode": "basic",
+
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  "python.formatting.provider": "autopep8"
+  */
 }
