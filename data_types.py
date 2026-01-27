@@ -22,7 +22,7 @@ print(type(Y))  # <class 'str'>
 Y = 8.9
 print(type(Y))  # <class 'float'>
 
-# Immutable Data Types - str, tuple, range, integers, float
+# Immutable Data Types - str, int, float, tuple, range
 # Strings:
 print("Immutable data types:")
 print("Strings:")
@@ -60,6 +60,15 @@ X = 5
 print(type(X))  # <class 'int'>
 print(id(X))  # 140707501995256 - new ID assigned
 
+# Floats:
+print("Floats:")
+X = 6.5
+print(type(X))  # <class 'float'>
+print(id(X))  # 2285426285488
+X = 5.3
+print(type(X))  # <class 'float'>
+print(id(X))  # 2285426285648 - new ID assigned
+
 # Tuples:
 print("Tuples:")
 points = ()
@@ -83,3 +92,5 @@ for i in range(1, 10, 2):
     print("Printing range from 1 to 10 with step 2", i)  # 1, 3, 5, 7, 9
 numbers = range(1, 20)
 print(id(numbers))  # 2551409042720 - new ID assigned
+
+# Mutable Data Types - lists, disctionaries, sets
