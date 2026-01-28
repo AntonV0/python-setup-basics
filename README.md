@@ -67,20 +67,14 @@ This repository contains a set of introductory Python exercises completed as par
   - Check voting eligibility
   - Determine whether numbers are prime
   - Identify odd and even numbers
+- Built an interactive, menu-driven calculator that:
+  - Uses `while True` loops for repeated execution
+  - Applies conditional branching (`if / elif / else`)
+  - Validates user input
+  - Supports addition, subtraction, multiplication, and division
+  - Handles division-by-zero safely
+  - Allows users to exit the program 
 - Applied `break` to exit loops early when conditions are met
-
-
-### 10. Interactive Menu Program
-- Built a menu-driven calculator using:
-  - `while True` loops
-  - Conditional branching (`if / elif / else`)
-  - User input validation
-- Supported operations:
-  - Addition
-  - Subtraction
-  - Multiplication
-  - Division with division-by-zero handling
-- Allowed users to exit the program gracefully
 
 ## Tools and Technologies
 - Python
