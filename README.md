@@ -52,6 +52,36 @@ This repository contains a set of introductory Python exercises completed as par
   - Intersection (`&`)
   - Difference (`-`)
 
+### 9. Flow Control (Loops and Conditionals)
+- Implemented `for` loops to:
+  - Generate multiplication tables
+  - Calculate squares of numbers
+  - Iterate through dictionaries
+  - Collect user input into lists
+- Implemented `while` loops to:
+  - Control repeated execution based on user input
+  - Generate prime numbers within a range
+  - Continuously prompt users until a condition is met
+- Used `if`, `elif`, and `else` statements to:
+  - Validate user input
+  - Check voting eligibility
+  - Determine whether numbers are prime
+  - Identify odd and even numbers
+- Applied `break` to exit loops early when conditions are met
+
+
+### 10. Interactive Menu Program
+- Built a menu-driven calculator using:
+  - `while True` loops
+  - Conditional branching (`if / elif / else`)
+  - User input validation
+- Supported operations:
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division with division-by-zero handling
+- Allowed users to exit the program gracefully
+
 ## Tools and Technologies
 - Python
 - Virtual Environments (`venv`)
