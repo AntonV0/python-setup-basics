@@ -76,6 +76,19 @@ This repository contains a set of introductory Python exercises completed as par
   - Allows users to exit the program 
 - Applied `break` to exit loops early when conditions are met
 
+### 10. Exception Handling
+- Explored Python exception handling using:
+  - `try`, `except`, `else`, and `finally` blocks
+- Handled specific exceptions such as:
+  - `ZeroDivisionError` for invalid arithmetic operations
+  - `FileNotFoundError` when attempting to read missing files
+- Demonstrated why catching overly general exceptions (`Exception`) should be avoided unless necessary
+- Implemented safe file handling using:
+  - The `with` statement for automatic resource management
+  - Explicit cleanup logic in `finally` blocks
+- Practised writing user-friendly error messages instead of allowing programs to crash
+- Observed program execution flow when exceptions are raised, caught, or uncaught
+
 ## Tools and Technologies
 - Python
 - Virtual Environments (`venv`)
