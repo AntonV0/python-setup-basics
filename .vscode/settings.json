@@ -34,4 +34,10 @@
 
   "python.formatting.provider": "autopep8"
   */
+
+  "python.analysis.extraPaths": [
+    "./builtins_and_standard_modules",
+    "./builtins_and_standard_modules/package"
+  ]
 }
+
