@@ -1,0 +1,24 @@
+Q1. Explain the concept of mutability and provide a code example that demonstrates a common bug related to modifying a mutable object that is referenced by multiple variables.
+-----------------------
+
+Mutability means an object can be changed after it is created. Lists, dictionaries, and sets are mutable, while integers, strings, booleans, floats, ranges and tuples are immutable. 
+
+A bug occurs when two variables reference the same mutable object. For example:
+
+a = [1, 2, 3]
+b = a
+b.append(4)
+
+print(a)  # [1, 2, 3, 4]
+
+Both "a" and "b" change because they reference the same list.
+
+-----------------------
+Q2. Describe a real-world scenario where a dictionary is a more appropriate data structure than a list. Justify your choice.
+-----------------------
+A dictionary is more appropriate for storing user details, such as name, email, number, address. Each type of user detail will be stored as a key, which are much faster to look up than searching through elements inside a list. Dictionaries also work well for product inventories, where price, stock, and IDs are stored as keys.
+
+-----------------------
+Q3. What are the key differences between a set and a list? When would you choose to use a set?
+-----------------------
+Lists store elements in order and allow duplicate entries. Elements in Sets are unordered and unique - not allowing duplicates. Sets are best used when you need to check if an item already exists in a collection, like a shopping basket or a registered email address.
