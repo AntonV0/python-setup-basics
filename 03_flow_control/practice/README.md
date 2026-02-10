@@ -1,8 +1,4 @@
-# Flow Control in Python
-
-This repository contains exercises, lab work, and an assignment completed as part of a Python bootcamp module on **flow control**. The focus is on using loops, conditionals, and basic program logic to solve common problems.
-
----
+# Practice - Flow Control in Python
 
 ## Topics Covered
 - `for` loops
@@ -100,8 +96,4 @@ This repository contains exercises, lab work, and an assignment completed as par
 ## Notes
 - Code follows PEP 8 naming and formatting conventions
 - Linter warnings were addressed where appropriate
-- The virtual environment is excluded via `.gitignore`
-
----
-
-This repository demonstrates practical use of Python flow control constructs and structured problem-solving using loops and conditionals.
+- UML diagrams were created using ASCII art for simplicity
