@@ -1,8 +1,4 @@
-# Python Exception Handling – Bootcamp Assignments
-
-This repository contains exercises, lab work, and an assignment completed as part of a Python bootcamp module on **exception handling**. The work focuses on writing robust programs that handle errors instead of crashing.
-
----
+# Practice - Python Exception Handling
 
 ## Topics Covered
 - Exception handling using `try`, `except`, `else`, and `finally`
@@ -95,7 +91,6 @@ This repository contains exercises, lab work, and an assignment completed as par
 ## Notes
 - Exception handling follows best practices by catching specific errors
 - Resources are safely managed using `with` statements where applicable
-- The virtual environment is excluded using `.gitignore`
 
 ---
 
