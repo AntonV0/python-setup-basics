@@ -288,6 +288,8 @@ data_gen = squared_gen(100000)
 # ? original code. They are defined as functions that take another function as an argument and
 # ? return a new function that has the additional functionality added to it.
 
+# ? Example 1: A simple decorator that converts the return value of a function to uppercase.
+
 def str_upper(func):
     def inner():
         s1 = func()  # This will call the original function and get its return value
@@ -307,3 +309,58 @@ print(greet())  # ? Output: GOOD MORNING
 # Shows the inner function that is returned by the decorator.
 print(greet)
 # ? Output: <function str_upper.<locals>.inner at 0x0000019F7A178040>
+
+# ? ------------------------------------------------------------------------------------------------
+
+# ? Example 2: A decorator that handles division by zero for a division function.
+
+
+def decor(func):
+    def inner(x, y):
+        if y == 0:
+            x, y = y, x  # Swap x and y to avoid division by zero
+        return func(x, y)
+    return inner
+
+
+# This decorator modifies the behavior of the div function to handle division by zero.
+@decor
+def div(a, b):
+    return a / b
+
+
+print(div(10, 0))  # ? Output: 0.0
+# (division by zero is avoided by swapping the arguments)
+
+print(div(10, 2))  # ? Output: 5.0
+
+# ? Alternatively:
+
+div = decor(div)  # Manually applying the decorator to the div function
+print(div(4, 0))  # ? Output: 0.0
+
+# ? ------------------------------------------------------------------------------------------------
+
+# ? Example 3: A decorator that replaces the addition function with a subtraction function.
+
+
+def decor2(func):
+    def subtraction(x, y):
+        return x - y
+    return subtraction
+
+
+@decor2
+# Becomes a parameter for the inner function subtraction, but it is not used in the inner function.
+def addition(a, b):
+    return a + b
+
+
+print(addition(4, 7))
+# ? Output: -3
+# (the addition function is replaced by the subtraction function due to the decorator)
+
+# Manually applying the decorator to the addition function
+f = decor2(addition)
+print(f(5, 10))  # 5 = x and 10 = y
+# ? Output: -5
