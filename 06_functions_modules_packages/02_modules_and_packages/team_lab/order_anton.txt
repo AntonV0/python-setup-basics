@@ -1,0 +1,10 @@
+Order ID: anton
+Items:
+ - Pen: 1 x £5.00
+ - Notebook: 3 x £15.00
+ - Laptop: 1 x £500.00
+ - Staples: 500 x £0.02
+Subtotal: £560.00
+Discount: £56.00
+VAT: £100.80
+Total: £604.80
